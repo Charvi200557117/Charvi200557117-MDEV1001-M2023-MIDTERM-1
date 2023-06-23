@@ -26,20 +26,20 @@ func seedData() {
     let context = appDelegate.persistentContainer.viewContext
     
     for jsonObject in jsonArray {
-        let teams = SportsTeams(context: context)
+        let team = Team(context: context)
         
         //teamID?
-        teams.teamName = jsonObject["teamName"] as? String
-        teams.gameType = jsonObject["gameType"] as? String
-        teams.coach = jsonObject["coach"] as? String
-        teams.captain = jsonObject["captain"] as? String
-        teams.players = jsonObject["players"] as? String
-        teams.homeVenue = jsonObject["homeVenue"] as? String
-        teams.championshipsWon = jsonObject["championshipsWon"] as? Int16 ?? 0
-        teams.foundedYear = jsonObject["foundedYear"] as? Int16 ?? 0
-        teams.league = jsonObject["league"] as? String
-        teams.websiteURL = jsonObject["websiteURL"] as? String
-        teams.logoURL = jsonObject["logoURL"] as? String
+        team.teamName = jsonObject["teamName"] as? String
+        team.gameType = jsonObject["gameType"] as? String
+        team.coach = jsonObject["coach"] as? String
+        team.captain = jsonObject["captain"] as? String
+        team.players = jsonObject["players"] as? String
+        team.homeVenue = jsonObject["homeVenue"] as? String
+        team.championshipsWon = jsonObject["championshipsWon"] as? Int16 ?? 0
+        team.foundedYear = jsonObject["foundedYear"] as? Int16 ?? 0
+        team.league = jsonObject["league"] as? String
+        team.websiteURL = jsonObject["websiteURL"] as? String
+        team.logoURL = jsonObject["logoURL"] as? String
         
         // Save the context after each movie is created
         do {

@@ -20,27 +20,27 @@ class AddEditViewController: UIViewController
     @IBOutlet weak var websiteURLTextField: UITextField!
     @IBOutlet weak var logoURLTextField: UITextField!
     
-    var teams: SportsTeams?
+    var team: Team?
     var dataViewController: DataViewController?
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        if let teams = teams
+        if let team = team
         {
             // Editing existing movie
-            teamNameTextField.text = teams.teamName
-            gameTypeTextField.text = teams.gameType
-            coachTextField.text = teams.coach
-            captainTextField.text = teams.captain
-            playersTextView.text = teams.players
-            homeVenueTextField.text = teams.homeVenue
-            championshipsWonTextField.text = "\(teams.championshipsWon)"
-            foundedYearTextField.text = "\(teams.foundedYear)"
-            leagueTextField.text = teams.league
-            websiteURLTextField.text = teams.websiteURL
-            logoURLTextField.text = teams.logoURL
+            teamNameTextField.text = team.teamName
+            gameTypeTextField.text = team.gameType
+            coachTextField.text = team.coach
+            captainTextField.text = team.captain
+            playersTextView.text = team.players
+            homeVenueTextField.text = team.homeVenue
+            championshipsWonTextField.text = "\(team.championshipsWon)"
+            foundedYearTextField.text = "\(team.foundedYear)"
+            leagueTextField.text = team.league
+            websiteURLTextField.text = team.websiteURL
+            logoURLTextField.text = team.logoURL
         }
         else
         {
@@ -65,23 +65,23 @@ class AddEditViewController: UIViewController
         // Retrieve the managed object context
         let context = appDelegate.persistentContainer.viewContext
 
-        if let teams = teams
+        if let team = team
         {
             // Editing existing teams
-            teams.teamName = teamNameTextField.text
-            teams.gameType = gameTypeTextField.text
-            teams.coach = coachTextField.text
-            teams.captain = captainTextField.text
-            teams.players = playersTextView.text
-            teams.homeVenue = homeVenueTextField.text
-            teams.championshipsWon = Int16(championshipsWonTextField.text ?? "") ?? 0
-            teams.foundedYear = Int16(foundedYearTextField.text ?? "") ?? 0
-            teams.league = leagueTextField.text
-            teams.websiteURL = websiteURLTextField.text
-            teams.logoURL = logoURLTextField.text
+            team.teamName = teamNameTextField.text
+            team.gameType = gameTypeTextField.text
+            team.coach = coachTextField.text
+            team.captain = captainTextField.text
+            team.players = playersTextView.text
+            team.homeVenue = homeVenueTextField.text
+            team.championshipsWon = Int16(championshipsWonTextField.text ?? "") ?? 0
+            team.foundedYear = Int16(foundedYearTextField.text ?? "") ?? 0
+            team.league = leagueTextField.text
+            team.websiteURL = websiteURLTextField.text
+            team.logoURL = logoURLTextField.text
         } else {
             // Creating a new teams
-            let newTeam = SportsTeams(context: context)
+            let newTeam = Team(context: context)
             newTeam.teamName = teamNameTextField.text
             newTeam.gameType = gameTypeTextField.text
             newTeam.coach = coachTextField.text
