@@ -1,5 +1,6 @@
 [
  {
+     "teamId":1,
    "teamName": "Manchester United",
    "gameType": "Football",
    "coach": "Ole Gunnar",
@@ -13,6 +14,7 @@
    "logoURL": "https://en.wikipedia.org/wiki/Manchester_United_F.C.#/media/File:Manchester_United_FC_crest.svg"
  },
  {
+     "teamId":2,
    "teamName": "Indian Cricket Team",
    "gameType": "Cricket",
    "coach": "Rahul Dravid",
@@ -26,6 +28,7 @@
    "logoURL": "https://en.wikipedia.org/wiki/Board_of_Control_for_Cricket_in_India#/media/File:Cricket_India_Crest.svg"
  },
  {
+     "teamId":3,
    "teamName": "Los Angeles Lakers",
    "gameType": "Basketball",
    "coach": "Frank Vogel",
@@ -39,6 +42,7 @@
    "logoURL": "File:Los Angeles Lakers logo.svg - Wikimedia Commons"
  },
  {
+     "teamId":4,
    "teamName": "Real Madrid CF",
    "gameType": "football",
    "coach": "Ancelotti",
@@ -52,6 +56,7 @@
    "logoURL": "https://en.wikipedia.org/wiki/Real_Madrid_CF#/media/File:Real_Madrid_CF.svg"
  },
  {
+     "teamId":5,
    "teamName": "Rafael Nadal Tennis Academy",
    "gameType": "Tennis",
    "coach": "Rafael Nadal",
@@ -65,6 +70,7 @@
    "logoURL": "https://rafaelnadal.com/en/about/logo-rafa-nadal-academy/"
  },
  {
+     "teamId":6,
    "teamName": "Dallas Cowboys",
    "gameType": "American Football",
    "coach": "Mike McCarthy",
@@ -78,6 +84,7 @@
    "logoURL": "https://commons.wikimedia.org/wiki/File:Dallas_Cowboys.svg"
  },
  {
+     "teamId":7,
    "teamName": "Golden State Warriors",
    "gameType": "Basketball",
    "coach": "Steve Kerr",
@@ -91,6 +98,7 @@
    "logoURL": "https://en.wikipedia.org/wiki/Golden_State_Warriors#/media/File:Golden_State_Warriors_logo.svg"
  },
  {
+     "teamId":8,
    "teamName": "US Olympics Swimming team",
    "gameType": "Swimming",
    "coach": "Various",
@@ -104,6 +112,7 @@
    "logoURL": "https://en.wikipedia.org/wiki/USA_Swimming#/media/File:USA_Swimming.svg"
  },
  {
+     "teamId":9,
    "teamName": "New York Yankees",
    "gameType": "Baseball",
    "coach": "Aaron Boone",
@@ -117,6 +126,7 @@
    "logoURL": "https://en.wikipedia.org/wiki/New_York_Yankees#/media/File:NewYorkYankees_PrimaryLogo.svg"
  },
  {
+     "teamId":10,
    "teamName": "India Men's National Hockey Team",
    "gameType": "Field Hockey",
    "coach": "Craig Fulton",

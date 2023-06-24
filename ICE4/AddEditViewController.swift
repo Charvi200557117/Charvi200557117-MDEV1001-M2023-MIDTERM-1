@@ -14,6 +14,7 @@ class AddEditViewController: UIViewController
     @IBOutlet weak var captainTextField: UITextField!
     @IBOutlet weak var playersTextView: UITextView!
     @IBOutlet weak var homeVenueTextField: UITextField!
+
     @IBOutlet weak var championshipsWonTextField: UITextField!
     @IBOutlet weak var foundedYearTextField: UITextField!
     @IBOutlet weak var leagueTextField: UITextField!
@@ -30,6 +31,7 @@ class AddEditViewController: UIViewController
         if let team = team
         {
             // Editing existing movie
+            
             teamNameTextField.text = team.teamName
             gameTypeTextField.text = team.gameType
             coachTextField.text = team.coach

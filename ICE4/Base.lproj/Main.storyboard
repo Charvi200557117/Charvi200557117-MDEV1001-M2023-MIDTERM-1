@@ -21,33 +21,34 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SportsTeamsCell" rowHeight="112" id="xGK-cl-8mV" userLabel="SportsTeamsCell" customClass="SportsTeamsTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SportsTeamsCell" rowHeight="112" id="xGK-cl-8mV" userLabel="SportsTeamsCell" customClass="SportsTeamsTableViewCell" customModule="ICE4" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xGK-cl-8mV" id="yhv-4b-g5A">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="112"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Team Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wz-VT-Rmx" userLabel="TeamNameLabel">
-                                                    <rect key="frame" x="9" y="0.0" width="381" height="34"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTi-4F-pqN" userLabel="TeamNameLabel">
+                                                    <rect key="frame" x="9" y="0.0" width="367" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Type" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWY-X4-0ZZ" userLabel="GameTypeLabel">
-                                                    <rect key="frame" x="9" y="29" width="381" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" systemColor="systemBlueColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Championships Won" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyl-aC-Imt" userLabel="ChampionshipsWonLabel">
-                                                    <rect key="frame" x="9" y="65" width="180" height="34"/>
+                                                    <rect key="frame" x="9" y="71" width="175" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Founded Year" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lyn-XG-nhI" userLabel="FoundedYearLabel">
-                                                    <rect key="frame" x="202" y="65" width="188" height="34"/>
+                                                    <rect key="frame" x="202" y="71" width="174" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Game Type" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWY-X4-0ZZ" userLabel="GameTypeLabel">
+                                                    <rect key="frame" x="9" y="29" width="367" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -55,10 +56,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="championshipsWonLabel" destination="fyl-aC-Imt" id="utV-NN-qYq"/>
-                                            <outlet property="foundedYearLabel" destination="Lyn-XG-nhI" id="gCP-bO-gQw"/>
-                                            <outlet property="gameTypeLabel" destination="uWY-X4-0ZZ" id="bNW-BV-f4v"/>
-                                            <outlet property="teamNameLabel" destination="9wz-VT-Rmx" id="bG5-XA-cum"/>
+                                            <outlet property="championshipsWonLabel" destination="fyl-aC-Imt" id="KFe-iN-DR1"/>
+                                            <outlet property="foundedYearLabel" destination="Lyn-XG-nhI" id="p3G-wl-wGT"/>
+                                            <outlet property="gameTypeLabel" destination="uWY-X4-0ZZ" id="aSq-B5-XwF"/>
+                                            <outlet property="teamNameLabel" destination="RTi-4F-pqN" id="ORe-VM-DLx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -290,7 +291,7 @@
                         <outlet property="AddEditTeamLabel" destination="T1k-RQ-qKK" id="MSm-fk-qI6"/>
                         <outlet property="UpdateButton" destination="ufs-GN-0Ev" id="KQN-Q6-p8E"/>
                         <outlet property="captainTextField" destination="Dr1-od-Tc2" id="dN4-HB-ugG"/>
-                        <outlet property="championshipsWonTextField" destination="I3c-Wo-cY2" id="v1i-SD-KdX"/>
+                        <outlet property="championshipsWonTextField" destination="I3c-Wo-cY2" id="scc-AM-IZz"/>
                         <outlet property="coachTextField" destination="9Ai-Pf-vzX" id="jS7-da-TZd"/>
                         <outlet property="foundedYearTextField" destination="N3K-eQ-ZKU" id="wRE-0y-D97"/>
                         <outlet property="gameTypeTextField" destination="MEO-Ur-Luz" id="bVS-Nm-0z9"/>

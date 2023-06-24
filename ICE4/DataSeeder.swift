@@ -28,7 +28,7 @@ func seedData() {
     for jsonObject in jsonArray {
         let team = Team(context: context)
         
-        //teamID?
+        team.teamId = jsonObject["teamId"] as? Int16 ?? 0
         team.teamName = jsonObject["teamName"] as? String
         team.gameType = jsonObject["gameType"] as? String
         team.coach = jsonObject["coach"] as? String

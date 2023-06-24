@@ -10,6 +10,8 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         fetchData()
     }
     
@@ -39,10 +41,9 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     // Updated for ICE5
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SportsTeamsCell", for: indexPath) as! SportsTeamsTableViewCell
-        
+
         let team = teams[indexPath.row]
         
         cell.teamNameLabel?.text = team.teamName
